@@ -117,8 +117,4 @@
 
 ## Release Notes
 
-* [CaraML Platform Release Notes](release-notes/caraml-platform-release-notes.md)
-* [Models Release Notes](release-notes/models-release-notes.md)
-* [Routers Release Notes](release-notes/routers-release-notes.md)
-* [Feature Store Release Notes](release-notes/feature-store-release-notes.md)
-* [Pipelines Release Notes](release-notes/pipelines-release-notes.md)
+* [CaraML Release Notes](release-notes/caraml-release-notes.md)

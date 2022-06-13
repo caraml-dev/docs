@@ -1,2 +1,0 @@
-# CaraML Platform Release Notes
-
