@@ -18,6 +18,8 @@ CaraML Models attempt to do so by:
 * **Abstracting Infrastructure** Models uses familiar concept such as Project, Model, and Version as its core component and abstract away complexity of deploying service from user.
 * **Auto Scaling** Models component is built on top KNative and KFServing to provide a production ready serverless solution.
 
+CaraML Models project code name is Merlin, which may show in code, SDK, API documentations
+
 ### **Feature Store**
 
 CaraML Feature Store is an operational data system for managing and serving machine learning features to models in production. CaraML's Feature store is forked from the open source feature store [Feast](https://feast.dev/), and customised to be geared towards more production ready use cases.&#x20;
@@ -28,6 +30,8 @@ CaraML routers is a fast, scalable and extensible system that can be used to des
 
 * **Experimentation** - Routers component supports designing and managing experiment configurations and running them, through its in-built experiment engine.
 * **Orchestration** - Routers supports deploying experiment workflows (through composable 'routers'). It is designed to work with pluggable pre- and post-processors and is backed by existing systems like CaraML Models for model endpoints. Routers takes care of all of the core Engineering aspects such as traffic routing, autoscaling, outcome logging, system monitoring and alerting.
+
+CaraML Models project code name is Turing, which may show in code, SDK, API documentations
 
 ### **Experiments**
 
