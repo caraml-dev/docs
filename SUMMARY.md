@@ -3,7 +3,7 @@
 ## Introduction
 
 * [What is CaraML?](README.md)
-* [Architecture](introduction/architecture/README.md)
+* [Architecture](introduction/architecture.md)
   * [Feature Store Architecture](introduction/architecture/feature-store-architecture.md)
   * [Models Architecture](introduction/architecture/models-architecture.md)
   * [Routers Architecture](introduction/architecture/routers-architecture.md)
@@ -39,6 +39,7 @@
 * [Routers](user-guides/routers/README.md)
   * [Getting Started with Routers](user-guides/routers/getting-started-with-routers.md)
   * [Creating a Router](user-guides/routers/creating-a-router/README.md)
+    * [Configure general settings](user-guides/routers/creating-a-router/configure-general-settings.md)
     * [Configure Routes](user-guides/routers/creating-a-router/configure-routes.md)
     * [Configure Experiment Engine](user-guides/routers/creating-a-router/configure-experiment-engine.md)
     * [Configure Enricher](user-guides/routers/creating-a-router/configure-enricher.md)

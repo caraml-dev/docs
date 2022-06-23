@@ -4,7 +4,7 @@ Please refer to the below diagram for a high level architecture of CaraML. You m
 
 ## CaraML Architecture
 
-![](<../../.gitbook/assets/MLP site diagram - Existing Gen name.png>)
+![](<../.gitbook/assets/MLP site diagram - Existing Gen name.png>)
 
 
 
