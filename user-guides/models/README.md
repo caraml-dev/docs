@@ -1,5 +1,3 @@
 # Models
 
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them.
-{% endhint %}
+Model represent machine learning model. A model can have a type which determine how the model can be deployed. CaraML supports both standard model (XGBoost, SKLearn, Tensorflow, and PyTorch) and user-defined model (PyFunc, Custom Golang and Java model). Conceptually, model in CaraML is similar to a class in programming language. To instantiate a model you’ll have to create a model version.
