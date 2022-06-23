@@ -14,6 +14,8 @@ In Turing, your will need to create a router with an optional Experiment Engine,
 * Choose a project in which you want to create your router. If such a project does not exist, you can create a project
 * Choose “Create Router”.
 
+![](../../../.gitbook/assets/projects\_dropdown.png)
+
 #### Configure router
 
 Now that we have navigated to the create a router page, we can continue to configure the router.
