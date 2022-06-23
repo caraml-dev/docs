@@ -2,54 +2,51 @@
 
 ## Project
 
-Project represent a namespace for a collection of model. In subsequent Merlin release, Project would be the main building block for access control. A project name could be something like Jaeger, Sauron, Omakase, etc.
+Project represents a namespace for a collection of CaraML resources, that belong to a specific team such as service accounts, Models, Routers, Pipelines etc. Project is one of the main building blocks for access control in CaraML. For creating a project, please refer to [Create a project](../user-guides/projects/create-a-project.md)
 
 ## Model
 
-Model represent machine learning model. A model can have a type which determine how the model can be deployed. Merlin supports both standard model (XGBoost, SKLearn, Tensorflow, and PyTorch) and user-defined model (PyFunc model). Conceptually, model in Merlin is similar to a class in programming language. To instantiate a model you’ll have to create a model version.
+Model represent machine learning model. A model can have a type which determine how the model can be deployed. CaraML supports both standard model (XGBoost, SKLearn, Tensorflow, and PyTorch) and user-defined model (PyFunc, Custom Golang and Java model). Conceptually, model in CaraML is similar to a class in programming language. To instantiate a model you’ll have to create a model version.
 
 ### Model Version
 
-Model version represents a snapshot of particular model iteration. A model version might contain artifacts which is deployable to Merlin. Each of a model version will have a version endpoint. Merlin supports up to 3 model version to be deployed at the same time.
+Model version represents a snapshot of particular model iteration. A model version might contain artifacts which is deployable to CaraML. Each of a model version will have a version endpoint. CaraML Models supports up to 3 model version to be deployed at the same time. You'll also be able to attach information such as metrics and tag to a given Model Version.
 
-### Version Endpoint
+### Model Version Endpoint
 
-Version endpoint is URL associated with a model version deployment. Version endpoint URL has following template
+Model Version Endpoint is an URL associated with a Model Version deployment. Model Version Endpoint URL has following template:
 
-For example a model named mymodel within project named myproject will have a version endpoint for version 1 which look as follow:
+```
+http://<model_name>-<version>.<project_name>.<merlin_base_url>
+```
 
-Version endpoint has several state:
+Model Version Endpoint has several state:
 
-#### pending
-
-Is the initial state of a version endpoint.
-
-ready
-
-Once deployed, a version endpoint is in ready state and is accessible.
-
-#### serving
-
-A version endpoint is in serving state if Model Endpoint has traffic rule which uses the particular Version Endpoint. A model version could not be undeployed if its version endpoint is in serving state.
-
-#### terminated
-
-Once undeployed a version endpoint is in terminated state.
-
-#### failed
-
-If error occurred during deployment.
+* **pending**: The initial state of a Model Version Endpoint.
+* **ready**: Once deployed, a Model Version Endpoint is in ready state and is accessible.
+* **serving**: A Model Version Endpoint is in serving state if Model Endpoint has traffic rule which uses the particular Model Version Endpoint. A Model Version Endpoint could not be undeployed if its still in serving state.
+* **terminated**: Once undeployed, a Model Version Endpoint is in terminated state.
+* **failed**: If error occurred during deployment.
 
 ### Model Endpoint
 
-Model Endpoint is a stable URL associated with a model. Model endpoint URL has following template
+Model Endpoint is a stable URL associated with a model. Model Endpoint URL has following template:
 
-| `http://<model_name>.<project_name>.<merlin_base_url>` |
-| ------------------------------------------------------ |
+```
+http://<model_name>.<project_name>.<merlin_base_url>
+```
 
+Model Endpoint can have a traffic rule which determine which Model Version Endpoint will receive traffic when request is received.
 
+### Model Deployment and serving
 
-Model endpoint can have a traffic rule which determine which model version will receive traffic when request is received.
+Model deployment in CaraML is a process of creating a model service and its Model Version Endpoint. Internally, the deployment of the Model Version Endpoint is done via [Kaniko](https://github.com/GoogleContainerTools/kaniko) and [KFServing](https://github.com/kubeflow/kfserving).
+
+There are two types of Model Version deployment, standard and python function (PyFunc) deployment. The difference is PyFunc deployment includes Docker image building step by Kaniko.
+
+Model serving is the next step of model deployment. After we have a running Model Version Endpoint, we can start serving the HTTP traffic by routing the Model Endpoint to it.
+
+![Model Deployment and Serving](../.gitbook/assets/spaces\_abvExn8MqK2CZpGDXOdj\_uploads\_git-blob-c010cf3f85b9b309e2a6cce3168d3234b2303c0d\_model\_deployment\_serving.drawio.svg)
 
 ## Transformer
 
@@ -57,11 +54,11 @@ Transformer is a service deployed in front of the model service which users can 
 
 ### Standard Transformer <a href="#standard-transformer" id="standard-transformer"></a>
 
-Standard Transformer is a built-in pre and post-processing steps supported by Merlin. With standard transformer, it’s possible to enrich the model’s incoming request with features from feast and transform the payload so that it’s compatible with API interface provided by the model. Same transformation can also be applied against the model’s response payload in the post-processing step, which allow users to adapt the response payload to make it suitable for consumption.
+Standard Transformer is a built-in pre and post-processing steps supported by CaraML. With standard transformer, it’s possible to enrich the model’s incoming request with features from feast and transform the payload so that it’s compatible with API interface provided by the model. Same transformation can also be applied against the model’s response payload in the post-processing step, which allow users to adapt the response payload to make it suitable for consumption.
 
 ### Custom Transformer <a href="#custom-transformer" id="custom-transformer"></a>
 
-In 0.8 release, Merlin adds support to the Custom Transformer deployment. This transformer type enables the users to deploy their own pre-built Transformer service. The user should develop, build, and publish their own Transformer Docker image.
+CaraML also supports Custom Transformer deployment. This transformer type enables the users to deploy their own pre-built Transformer service. The user should develop, build, and publish their own Transformer Docker image.
 
 Similar to Standard Transformer, users can configure Custom Transformer from UI and SDK. The difference is instead of specifying the standard transformer configuration, users configure the Docker image and the command and arguments to run it.
 

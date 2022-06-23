@@ -6,36 +6,36 @@ CaraML is a **Machine Learning Operations (MLOps) platform** that help data scie
 
 ### **Models**
 
-Merlin is a framework for serving machine learning model. The project was born of the belief that model deployment should be:
+Models component is a framework for serving machine learning model. The project was born of the belief that model deployment should be:
 
 * Easy and self-serve: Human should not become the bottleneck for deploying model into production.
-* Scalable: The model deployed should be able to handle Gojek scale and beyond.
+* Scalable: The model deployed should be able to handle large scale traffic
 * Fast: The framework should be able to let user iterate quickly.
 * Cost Efficient: It should provide all benefit above in a cost efficient manner.
 
-Merlin attempt to do so by:
+CaraML Models attempt to do so by:
 
-* **Abstracting Infrastructure** Merlin uses familiar concept such as Project, Model, and Version as its core component and abstract away complexity of deploying service from user.
-* **Auto Scaling** Merlin is built on top KNative and KFServing to provide a production ready serverless solution.
+* **Abstracting Infrastructure** Models uses familiar concept such as Project, Model, and Version as its core component and abstract away complexity of deploying service from user.
+* **Auto Scaling** Models component is built on top KNative and KFServing to provide a production ready serverless solution.
 
 ### **Feature Store**
 
-Feature Store is an operational data system for managing and serving machine learning features to models in production. CaraML's Feature store is powered by [Feast](https://feast.dev/).&#x20;
+CaraML Feature Store is an operational data system for managing and serving machine learning features to models in production. CaraML's Feature store is forked from the open source feature store [Feast](https://feast.dev/), and customised to be geared towards more production ready use cases.&#x20;
 
 ### **Routers**
 
-Turing is a fast, scalable and extensible system that can be used to design, deploy and evaluate ML experiments in production. Broadly, its capabilities can be divided into the following two areas that may be utilised in conjunction or separately:
+CaraML routers is a fast, scalable and extensible system that can be used to design, deploy and evaluate ML experiments in production. Broadly, its capabilities can be divided into the following two areas that may be utilised in conjunction or separately:
 
-* **Experimentation** - Turing supports designing and managing experiment configurations and running them, through its in-built experiment engine.
-* **Orchestration** - Turing supports deploying experiment workflows (through composable 'routers'). It is designed to work with pluggable pre- and post-processors and is backed by existing systems like Merlin for model endpoints. Turing takes care of all of the core Engineering aspects such as traffic routing, autoscaling, outcome logging, system monitoring and alerting.
+* **Experimentation** - Routers component supports designing and managing experiment configurations and running them, through its in-built experiment engine.
+* **Orchestration** - Routers supports deploying experiment workflows (through composable 'routers'). It is designed to work with pluggable pre- and post-processors and is backed by existing systems like CaraML Models for model endpoints. Routers takes care of all of the core Engineering aspects such as traffic routing, autoscaling, outcome logging, system monitoring and alerting.
 
 ### **Experiments**
 
-Turing supports designing and managing experiment configurations in a safe and holistic manner. At run time, these configurations can be used (within the Turing router, or externally) to run the experiments and generate treatments. The experiments can be run either deterministically (A/B Experiments) or as a function of time (Switchback Experiments), or a combination of both (Randomized Switchbacks).
+CaraML Experiments supports designing and managing experiment configurations in a safe and holistic manner. At run time, these configurations can be used (within the Router, or externally) to run the experiments and generate treatments. The experiments can be run either deterministically (A/B Experiments) or as a function of time (Switchback Experiments), or a combination of both (Randomized Switchbacks).
 
 ### **Pipelines**
 
-Data Aware Pipeline (DAP) is a set of solutions to build data application systems like ETL processes and ML pipelines. DAP is powered by [Flyte](https://docs.flyte.org/en/latest/), an open-source workflow automation platform to create concurrent, scalable, and maintainable workflows for machine learning and data processing.
+CaraML Pipelines are a set of solutions to build data application systems like ETL processes and ML pipelines. CaraML Pipelines is powered by [Flyte](https://docs.flyte.org/en/latest/), an open-source workflow automation platform to create concurrent, scalable, and maintainable workflows for machine learning and data processing.
 
 ****
 

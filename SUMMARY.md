@@ -3,7 +3,12 @@
 ## Introduction
 
 * [What is CaraML?](README.md)
-* [Architecture](introduction/architecture.md)
+* [Architecture](introduction/architecture/README.md)
+  * [Feature Store Architecture](introduction/architecture/feature-store-architecture.md)
+  * [Models Architecture](introduction/architecture/models-architecture.md)
+  * [Routers Architecture](introduction/architecture/routers-architecture.md)
+  * [Experiments Architecture](introduction/architecture/experiments-architecture.md)
+  * [Pipelines Architecture](introduction/architecture/pipelines-architecture.md)
 * [Core Concepts](introduction/core-concepts.md)
 
 ## User guides
@@ -14,9 +19,10 @@
   * [Project Settings](user-guides/projects/project-settings.md)
 * [Models](user-guides/models/README.md)
   * [Getting Started with Models](user-guides/models/getting-started-with-models.md)
-  * [Deploying a model](user-guides/models/deploying-a-model/README.md)
-    * [Deploying a custom model](user-guides/models/deploying-a-model/deploying-a-custom-model.md)
-    * [Deploy a batch prediction model](user-guides/models/deploying-a-model/deploy-a-batch-prediction-model.md)
+  * [Create a Model](user-guides/models/create-a-model.md)
+  * [Create a Model Version](user-guides/models/create-a-model-version.md)
+  * [Deploy a model version endpoint](user-guides/models/deploy-a-model-version-endpoint.md)
+  * [Serve Model Endpoint](user-guides/models/serve-model-endpoint.md)
   * [Updating Model versions](user-guides/models/updating-model-versions.md)
   * [Adding transformer config](user-guides/models/adding-transformer-config.md)
   * [Viewing Model details](user-guides/models/viewing-model-details.md)
