@@ -47,7 +47,7 @@ There are 5 tabs that can be viewed in the homepage a more-actions button that w
 [logs.md](logs.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="more-actions.md" %}
+[more-actions.md](more-actions.md)
 {% endcontent-ref %}
 

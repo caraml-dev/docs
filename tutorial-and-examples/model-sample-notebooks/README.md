@@ -1,13 +1,23 @@
 # Model Sample Notebooks
 
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
+You may refer to subpages for notebook based examples on how to deploy certain types of models on CaraML.
 
-## The basics
+{% content-ref url="custom-metrics-sample.md" %}
+[custom-metrics-sample.md](custom-metrics-sample.md)
+{% endcontent-ref %}
 
-Projects are containers for task lists. Think of them as a library for everything your team needs to get done to complete or ship a project.
+{% content-ref url="python-function-sample.md" %}
+[python-function-sample.md](python-function-sample.md)
+{% endcontent-ref %}
 
-## Creating a project
+{% content-ref url="pytorch-sample.md" %}
+[pytorch-sample.md](pytorch-sample.md)
+{% endcontent-ref %}
 
-Hit the big '+' button in your sidebar and select 'New Project' from the menu that pops up. Give your project a name, and you're good to go!
+{% content-ref url="sklearn-sample.md" %}
+[sklearn-sample.md](sklearn-sample.md)
+{% endcontent-ref %}
+
+{% content-ref url="tensorflow-sample.md" %}
+[tensorflow-sample.md](tensorflow-sample.md)
+{% endcontent-ref %}

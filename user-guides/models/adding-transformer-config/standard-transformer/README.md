@@ -1,12 +1,12 @@
 # Standard Transformer
 
-Standard Transformer is a built-in pre and post-processing steps supported by Merlin. With standard transformer, it’s possible to enrich the model’s incoming request with features from feast and transform the payload so that it’s compatible with API interface provided by the model. Same transformation can also be applied against the model’s response payload in the post-processing step, which allow users to adapt the response payload to make it suitable for consumption.
+Standard Transformer is a built-in pre and post-processing steps supported by CaraML. With standard transformer, it’s possible to enrich the model’s incoming request with features from CaraML Feature Store and transform the payload so that it’s compatible with API interface provided by the model. Same transformation can also be applied against the model’s response payload in the post-processing step, which allow users to adapt the response payload to make it suitable for consumption.
 
 ## Concept
 
 Within standard transformer there are 2 process that user can specify: preprocess and postprocess.
 
-Preprocess is useful to perform transformation against model’s incoming request such as enriching the request with features from Feast and transforming the client’s request to a format accepted by model service.
+Preprocess is useful to perform transformation against model’s incoming request such as enriching the request with features from CaraML Feature Store and transforming the client’s request to a format accepted by model service.
 
 Post Processing is useful for performing transformation against model response so that it is more suitable for client consumption.
 
@@ -23,7 +23,7 @@ Within both preprocess and postprocess, there are 3 stages that users can specif
 Jsonpath is a way to find value from JSON payload. Standard transformer using jsonpath to find values either from request or model response payload. Standard transformer using Jsonpath in several operations:
 
 * Variable declaration
-* Feast entity value
+* CaraML Feature Store entity value
 * Base table
 * Column value in table
 * Json Output
@@ -40,7 +40,7 @@ fromJson:
     valueType:      # Type of default value, mandatory to specify if default value is exist
 ```
 
-but in some part of operation like variable operation and feast entity extraction, jsonPath configuration is like below
+but in some part of operation like variable operation and CaraML Feature Store entity extraction, jsonPath configuration is like below
 
 ```
     jsonPathConfig:
@@ -160,7 +160,7 @@ At the input stage, users specify all the data dependencies that are going to be
 
 1. Table creation
 
-* Table Creation from Feast Features
+* Table Creation from CaraML Feature Store Features
 * Table Creation from Input Request
 * Table Creation from File
 
@@ -171,9 +171,9 @@ At the input stage, users specify all the data dependencies that are going to be
 
 Table is the main data structure within the standard transformer. There are 3 ways of creating table in standard transformer:
 
-#### Table Creation from Feast Features
+#### Table Creation from CaraML Feature Store Features
 
-This operation creates one or more tables containing features from Feast. This operation is already supported in Merlin 0.10. The key change to be made is to adapt the result of operation. Previously, the features retrieved from feast is directly enriched to the original request body to be sent to the model. Now, the operation only outputs as internal table representation which can be accessible by subsequent transformation steps in the pipeline.
+This operation creates one or more tables containing features from CaraML Feature Store. This operation is already supported in CaraML Models 0.10. The key change to be made is to adapt the result of operation. Previously, the features retrieved from CaraML Feature Store is directly enriched to the original request body to be sent to the model. Now, the operation only outputs as internal table representation which can be accessible by subsequent transformation steps in the pipeline.
 
 Additionally, it should be possible for users to give the features table a name to ease referencing the table from subsequent steps.
 
@@ -213,7 +213,7 @@ Following is the syntax:
            defaultValue:  # default value if the feature is not available
 ```
 
-below is the sample of feast input:
+below is the sample of CaraML Feature Store input:
 
 ```
   feast:
@@ -236,7 +236,7 @@ below is the sample of feast input:
               defaultValue: '90909'
 ```
 
-There are two ways to get/retrieve features from feast in merlin standard transformer: \* Getting the features values from feast GRPC URL \* By direcly querying from feast storage (Bigtable or Redis). For this, you need to add extra environment variables in standard transformer \* REDIS. Set `FEAST_REDIS_DIRECT_STORAGE_ENABLED` value to true \* BIGTABLE. Set `FEAST_BIGTABLE_DIRECT_STORAGE_ENABLED` value to true
+There are two ways to get/retrieve features from CaraML feature store in standard transformer: \* Getting the features values from CaraML Feature Store GRPC URL \* By direcly querying from CaraML Feature Store storage (Bigtable or Redis). For this, you need to add extra environment variables in standard transformer \* REDIS. Set `FEAST_REDIS_DIRECT_STORAGE_ENABLED` value to true \* BIGTABLE. Set `FEAST_BIGTABLE_DIRECT_STORAGE_ENABLED` value to true
 
 \
 For detail explanation of environment variables in standard transformer, you can look [this section](./#standard-transformer-environment-variables)
@@ -996,7 +996,7 @@ Depending on the json format, it will render different result JSON
       }
     ```
 
-### Deploy Standard Transformer using Merlin UI
+### Deploy Standard Transformer using Models UI
 
 Once you logged your model and it’s ready to be deployed, you can go to the model deployment page.
 
@@ -1005,20 +1005,20 @@ Here’s the short video demonstrating how to configure the Standard Transformer
 ![Configure Standard Transformer](../../../../.gitbook/assets/configure\_standard\_transformer.gif)
 
 1. As the name suggests, you must choose **Standard Transformer** as Transformer Type.
-2. The **Retrieval Table** panel will be displayed. This panel is where you configure the Feast Project, Entities, and Features to be retrieved.
+2. The **Retrieval Table** panel will be displayed. This panel is where you configure the CaraML Feature Store, Entities, and Features to be retrieved.
    1. The list of Feast Entity depends on the selected Feast Project
    2. Similarly, the list of Feast Feature also depends on the configured entities
 3. You can have multiple Retrieval Table that can retrieve a different kind of entities and features and enrich the request to your model at once. To add it, simply click `Add Retrieval Table`, and new Retrieval Table panel will be displayed and ready to be configured.
-4. You can check the Transformer Configuration YAML specification by clicking `See YAML configuration`. You can copy and paste this YAML and use it for deployment using Merlin SDK.
+4. You can check the Transformer Configuration YAML specification by clicking `See YAML configuration`. You can copy and paste this YAML and use it for deployment using CaraML Merlin SDK.
    1. To read more about Transformer Configuration specification, please continue reading.
 5. You can also specify the advanced configuration. These configurations are separated from your model.
    1. Request and response payload logging
    2. Resource request (Replicas, CPU, and memory)
    3. Environment variables (See supported environment variables below)
 
-### Deploy Standard Transformer using Merlin SDK
+### Deploy Standard Transformer using CaraML's Merlin SDK
 
-Make sure you are using the supported version of Merlin SDK.
+Make sure you are using the supported version of CaraML's Merlin SDK.
 
 ```bash
 > pip install merlin-sdk -U
@@ -1054,8 +1054,6 @@ endpoint = merlin.deploy(v, transformer=transformer)
 ### Standard Transformer Environment Variables
 
 Below are supported environment variables to configure your Transformer.
-
-
 
 | Name                                      | Description                                                                                                                                                                                                                                                                                                                             | Default Value |
 | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |

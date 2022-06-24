@@ -43,7 +43,6 @@
     * [Configuring Alerts](user-guides/models/configuring-alert/configuring-alerts.md)
   * [!!Logging Request-Response Pairs](user-guides/models/logging-request-response-pairs.md)
 * [Routers](user-guides/routers/README.md)
-  * [Getting Started with Routers](user-guides/routers/getting-started-with-routers.md)
   * [Creating a Router](user-guides/routers/creating-a-router/README.md)
     * [Configure general settings](user-guides/routers/creating-a-router/configure-general-settings.md)
     * [Configure routes](user-guides/routers/creating-a-router/configure-routes.md)
@@ -97,14 +96,11 @@
 ## Tutorial and Examples
 
 * [Model Sample Notebooks](tutorial-and-examples/model-sample-notebooks/README.md)
-  * [Custom Metrics Sample](tutorial-and-examples/model-sample-notebooks/custom-metrics-sample.md)
-  * [Python Function sample](tutorial-and-examples/model-sample-notebooks/python-function-sample.md)
-  * [Pytorch Sample](tutorial-and-examples/model-sample-notebooks/pytorch-sample.md)
-  * [SKLearn Sample](tutorial-and-examples/model-sample-notebooks/sklearn-sample.md)
-  * [Tensorflow Sample](tutorial-and-examples/model-sample-notebooks/tensorflow-sample.md)
-  * [XGBoost Sample](tutorial-and-examples/model-sample-notebooks/xgboost-sample.md)
-  * [BQ to BQ Batch Prediction Sample: IRIS Classifier](tutorial-and-examples/model-sample-notebooks/bq-to-bq-batch-prediction-sample-iris-classifier.md)
-  * [BQ to BQ Batch Prediction Sample: Predicting New York Taxi Trip Fare](tutorial-and-examples/model-sample-notebooks/bq-to-bq-batch-prediction-sample-predicting-new-york-taxi-trip-fare.md)
+  * [Deploy Standard Models](tutorial-and-examples/model-sample-notebooks/custom-metrics-sample.md)
+  * [Deploy PyFunc Model](tutorial-and-examples/model-sample-notebooks/python-function-sample.md)
+  * [Run Batch Prediction Job](tutorial-and-examples/model-sample-notebooks/pytorch-sample.md)
+  * [Using Transformers](tutorial-and-examples/model-sample-notebooks/sklearn-sample.md)
+  * [Others examples on Models](tutorial-and-examples/model-sample-notebooks/tensorflow-sample.md)
 * [Router Examples](tutorial-and-examples/router-examples/README.md)
   * [Setup and run Batch Ensembling Job](tutorial-and-examples/router-examples/setup-and-run-batch-ensembling-job.md)
 * [Feature Store Examples](tutorial-and-examples/feature-store-examples.md)
@@ -113,7 +109,6 @@
 * [Real-time system Design Guide](tutorial-and-examples/real-time-system-design-guide.md)
 * [Batch system Design Guide](tutorial-and-examples/batch-system-design-guide.md)
 * [Best practice for CaraML](tutorial-and-examples/best-practice-for-caraml.md)
-* [Selecting the right experiment engine](tutorial-and-examples/selecting-the-right-experiment-engine.md)
 
 ## CaraML SDK
 

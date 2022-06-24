@@ -1,6 +1,6 @@
 # Python SDK
 
-The CaraML Models SDK can be installed directly using pip:
+The CaraML Models Merlin SDK can be installed directly using pip:
 
 ```bash
 pip install merlin-sdk
