@@ -27,10 +27,10 @@ For access to CaraML Experiments, users can self-onboard via the CaraML UI.
 
 4\. Enter a name for the Randomization Key and select the Segmenters.
 
-* The order of the segmenters determines the priority of the segmenters when optional segmenters are used. For example, if the chosen segmenters are `s2_ids`, and `days_of_week` (in that order) and a given request matches 2 experiments - one where the `s2_ids` is optional and another one where the `days_of_week` is optional, the s2\_ids experiment (where there is an exact match of the s2\_ids) will be chosen. For more information and examples, please refer to the [Experiment Hierarchy](broken-reference) section in the Introduction page.
+* The order of the segmenters determines the priority of the segmenters when optional segmenters are used. For example, if the chosen segmenters are `s2_ids`, and `days_of_week` (in that order) and a given request matches 2 experiments - one where the `s2_ids` is optional and another one where the `days_of_week` is optional, the s2\_ids experiment (where there is an exact match of the s2\_ids) will be chosen. For more information and examples, please refer to the [Experiment Hierarchy](../../introduction/core-concepts.md#experiment-hierarchy) section in the Introduction page.
 * Where the segmenter may be computed from several different (groups of) variables at runtime, also select the desired variable mapping. For example, `s2_ids` may be supplied as `s2_id` or computed from `latitude,longitude`. This must be specified in the settings.
 
-5\. Click on Save. And voila! The onboarding is complete and you should see the configured settings. The project credentials (in particular, the `passkey`) would be required for running experiments ([Turing](https://github.com/gojek/turing/tree/main/docs) takes care of this if you are running the experiments through its routers).&#x20;
+5\. Click on Save. And voila! The onboarding is complete and you should see the configured settings. The project credentials (in particular, the `passkey`) would be required for running experiments ([CaraML Routers](../routers/) takes care of this if you are running the experiments through its routers).&#x20;
 
 ![](../../.gitbook/assets/01\_settings\_details.png)
 

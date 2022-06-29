@@ -38,7 +38,7 @@ b. Click the "Next" button.
 
 ## 2. Configure Experiment's Segmenters
 
-a. In the Create Experiment's segmenter page, fill up the segmenters configuration. The segmenters shown will be based on the project settings. Segmenters marked with an asterisk(\*) are required and cannot be left unset. All other segmenters are optional and where a value is not supplied, it results in a "weak" match and where it is supplied, there may be an "exact" match or a no match. For more information on optional segmenters and the matching behavior, please refer to the [Experiment Hierarchy](broken-reference) section in the Introduction page.
+a. In the Create Experiment's segmenter page, fill up the segmenters configuration. The segmenters shown will be based on the project settings. Segmenters marked with an asterisk(\*) are required and cannot be left unset. All other segmenters are optional and where a value is not supplied, it results in a "weak" match and where it is supplied, there may be an "exact" match or a no match. For more information on optional segmenters and the matching behavior, please refer to the [Experiment Hierarchy](../../introduction/core-concepts.md#experiment-hierarchy) section in the Introduction page.
 
 You may choose to select a Pre-configured Segment from the drop down as highlighted in red below and edit them in-place for use.
 
@@ -56,7 +56,7 @@ b. Click the "Next" button.
 
 ## 3. Configure Experiment's Treatments
 
-a. Fill in the treatment(s) configurations. While selecting treatment(s) for the Experiment, you may create custom configuration or select a template. If a template is selected, the treatment fields will be auto-populated, further edit is possible (See `Creating Treatments` section to understand more about Treatments template).
+a. Fill in the treatment(s) configurations. While selecting treatment(s) for the Experiment, you may create custom configuration or select a template. If a template is selected, the treatment fields will be auto-populated, further edit is possible (See [`Creating Treatments`](creating-treatments.md) section to understand more about Treatments template).
 
 Likewise to an Experiment's Segment, when configuring treatments for the Experiment, you may choose to select a Pre-configured Treatment from the dropdown as highlighted in red below and edit them in-place for use.
 

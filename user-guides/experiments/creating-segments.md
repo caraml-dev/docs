@@ -4,7 +4,7 @@ From the Experiments List page, click on 'Segments'.
 
 ![Create Segment Navigation](../../.gitbook/assets/12\_create\_segment\_navigate.png)
 
-Segments can be created from the segments landing page. Created segments can be used as a template, to initialise one or more segments in an experiment (See [`Creating Experiments - Configure Experiment's Segmenters`](https://github.com/eric-lidong/turing-experiments/blob/main/docs/how-to/04\_creating\_experiments/README.md#2-Configure-Experiments-Segmenters) for more information).
+Segments can be created from the segments landing page. Created segments can be used as a template, to initialise one or more segments in an experiment (See [`Creating Experiments - Configure Experiment's Segmenters`](creating-experiments.md#2.-configure-experiments-segmenters) for more information).
 
 ## 0. Create Segment
 
