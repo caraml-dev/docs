@@ -1,2 +1,0 @@
-# Batch system Design Guide
-

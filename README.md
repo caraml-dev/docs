@@ -55,8 +55,8 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [models](user-guides/models/)
 {% endcontent-ref %}
 
-{% content-ref url="user-guides/feature-store/" %}
-[feature-store](user-guides/feature-store/)
+{% content-ref url="user-guides/feature-store.md" %}
+[feature-store.md](user-guides/feature-store.md)
 {% endcontent-ref %}
 
 {% content-ref url="user-guides/routers/" %}
@@ -67,14 +67,14 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [experiments](user-guides/experiments/)
 {% endcontent-ref %}
 
-{% content-ref url="user-guides/pipelines/" %}
-[pipelines](user-guides/pipelines/)
+{% content-ref url="user-guides/pipelines.md" %}
+[pipelines.md](user-guides/pipelines.md)
 {% endcontent-ref %}
 
 ## Deploying CaraML in your infrastructure?
 
 Please refer to our deployment guide below to deploy CaraML into your own infrastructure
 
-{% content-ref url="broken-reference/" %}
-[broken-reference](broken-reference/)
+{% content-ref url="deployment-guide/deploying-caraml.md" %}
+[deploying-caraml.md](deployment-guide/deploying-caraml.md)
 {% endcontent-ref %}
