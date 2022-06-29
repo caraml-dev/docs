@@ -1,2 +1,0 @@
-# Logging Request-Response Pairs
-

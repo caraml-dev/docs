@@ -51,8 +51,8 @@ Now that we have navigated to the create a router page, we can continue to confi
 [configure-ensembler.md](configure-ensembler.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../models/logging-request-response-pairs.md" %}
-[logging-request-response-pairs.md](../../models/logging-request-response-pairs.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="fallbacks-and-error-handling.md" %}

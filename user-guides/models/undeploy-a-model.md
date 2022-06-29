@@ -1,2 +1,0 @@
-# Undeploy a model
-
