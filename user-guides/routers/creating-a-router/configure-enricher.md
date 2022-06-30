@@ -16,7 +16,7 @@ CaraML Router will deploy specified Docker image as a pre-processor and will sen
 
 Configure the Docker Container. There are 4 required inputs.
 
-![](../../../.gitbook/assets/docker\_container\_config.png)
+![Docker enricher](../../../.gitbook/assets/docker\_container\_config.png)
 
 **Docker Image**: The image is formed of 2 parts. Select the registry to where your image is stored. Following that, enter the name of the image.
 
@@ -28,15 +28,15 @@ Configure the Docker Container. There are 4 required inputs.
 
 **Service Account**: You can **optionally** mount a service account for your Docker deployment.
 
-![](../../../.gitbook/assets/service\_acc\_dropdown.png)
+![Configure service account](../../../.gitbook/assets/service\_acc\_dropdown.png)
 
 Configure any environment variables required by the Docker container. You need to input the name and corresponding value of each input.
 
-![](../../../.gitbook/assets/env\_var\_panel.png)
+![Environment variables](../../../.gitbook/assets/env\_var\_panel.png)
 
 Configure the resources required for the enricher. There are 3 required inputs, with default values provided for each.
 
-![](../../../.gitbook/assets/resources\_panel.png)
+![Resource allocation](../../../.gitbook/assets/resources\_panel.png)
 
 **CPU**: Total amount of CPU available for your enricher.
 
@@ -47,4 +47,3 @@ Configure the resources required for the enricher. There are 3 required inputs, 
 ### External Enricher
 
 Coming soon.
-

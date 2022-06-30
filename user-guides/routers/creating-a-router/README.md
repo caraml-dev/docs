@@ -13,11 +13,11 @@ In CaraML, your will need to create a router with an optional Experiment Engine,
 * Open the CaraML project homepage.
 * Choose a project in which you want to create your router. If such a project does not exist, you can [create a project](../../projects/create-a-project.md)
 
-![](../../../.gitbook/assets/projects\_dropdown.png)
+![Project selection](../../../.gitbook/assets/projects\_dropdown.png)
 
 * Choose “Create Router”.
 
-![](../../../.gitbook/assets/create\_router\_button.png)
+![Create Routers](../../../.gitbook/assets/create\_router\_button.png)
 
 #### Configure router
 
@@ -49,12 +49,4 @@ Now that we have navigated to the create a router page, we can continue to confi
 
 {% content-ref url="configure-ensembler.md" %}
 [configure-ensembler.md](configure-ensembler.md)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="fallbacks-and-error-handling.md" %}
-[fallbacks-and-error-handling.md](fallbacks-and-error-handling.md)
 {% endcontent-ref %}

@@ -56,7 +56,7 @@ From the Validation Detail page, click 'More Actions' -> 'Configure Validation'.
 
 1\. In the Edit Validation Page, you can edit the Validation's configuration.&#x20;
 
-![](../../.gitbook/assets/03\_edit\_settings\_validation.png)
+![Edit validation configuration](../../.gitbook/assets/03\_edit\_settings\_validation.png)
 
 2\. External Validation: URL of external validation to validate experiments.
 

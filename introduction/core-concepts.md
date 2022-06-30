@@ -46,7 +46,7 @@ There are two types of Model Version deployment, standard and python function (P
 
 Model serving is the next step of model deployment. After we have a running Model Version Endpoint, we can start serving the HTTP traffic by routing the Model Endpoint to it.
 
-![](../.gitbook/assets/model\_deployment\_serving.svg)
+![Model Serving](../.gitbook/assets/model\_deployment\_serving.svg)
 
 ## Transformer
 

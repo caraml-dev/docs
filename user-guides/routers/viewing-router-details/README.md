@@ -6,15 +6,15 @@ Once the router has been created, you will be able to view the configuration of 
 
 Open the CaraML Project homepage. Select the project in which the router was created.
 
-![](../../../.gitbook/assets/projects\_dropdown.png)
+![Project selection](../../../.gitbook/assets/projects\_dropdown.png)
 
 Click on the row that contains the router.
 
-![](../../../.gitbook/assets/router\_row.png)
+![Routers list](../../../.gitbook/assets/router\_row.png)
 
 You will now be able to see the Router Details View with details about the router.
 
-![](../../../.gitbook/assets/router\_details\_header.png)
+![Router details](../../../.gitbook/assets/router\_details\_header.png)
 
 **Name and Status Badge**: You will see the name of the router alongside a badge that indicates the status of the router deployment.
 
@@ -50,4 +50,3 @@ There are 5 tabs that can be viewed in the homepage a more-actions button that w
 {% content-ref url="more-actions.md" %}
 [more-actions.md](more-actions.md)
 {% endcontent-ref %}
-

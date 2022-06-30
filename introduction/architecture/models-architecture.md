@@ -2,7 +2,7 @@
 
 The overall view of the system architecture of CaraML Models can be illustrated in the diagram below:
 
-![](../../.gitbook/assets/merlin\_architecture.svg)
+![Models Architecture](../../.gitbook/assets/merlin\_architecture.svg)
 
 ### Interacting with Models
 

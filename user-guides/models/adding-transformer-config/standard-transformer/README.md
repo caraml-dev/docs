@@ -16,7 +16,7 @@ Within both preprocess and postprocess, there are 3 stages that users can specif
 * Transformation stage. In this stage, the standard transformers perform transformation to the tables created in the input stage so that its structure is suitable for the output. In the transformation stage, users operate mainly on tables and are provided with 2 transformation types: single table transformation and table join.
 * Output stage At this stage, both the preprocessing and postprocessing pipeline should create a JSON output. The JSON output of preprocessing pipeline will be used as the request payload to be sent as model request, whereas JSON output of the postprocessing pipeline will be used as response payload to be returned to downstream service / client.
 
-![](../../../../.gitbook/assets/standard\_transformer.png)
+![Transformer](../../../../.gitbook/assets/standard\_transformer.png)
 
 ## Jsonpath
 

@@ -43,11 +43,11 @@ In the search panel, enter the experiment name or description to filter by.&#x20
 
 1\. Click "Search Options", this will open up the Filters Panel.&#x20;
 
-![](../../.gitbook/assets/05\_view\_experiment\_search\_filter.png)
+![Search options](../../.gitbook/assets/05\_view\_experiment\_search\_filter.png)
 
 2\. In the Filters Panel, select the respective filters to apply. A "Filtered" badge will be shown beside experiment name to indicate that the experiments are filtered.&#x20;
 
-![](../../.gitbook/assets/05\_view\_experiment\_search\_filtered.png)
+![Filtered status](../../.gitbook/assets/05\_view\_experiment\_search\_filtered.png)
 
 ### History
 

@@ -9,7 +9,7 @@ Once the segment has been created, you will be able to view the segment's config
 1. Click on the row that contains the segment.
 2. You will now be able to see the Segment Details View. If one or more of the project's segmenters have been removed since an experiment has been created, the segmenter highlighted in red is no longer in use for the experiment.&#x20;
 
-![](../../.gitbook/assets/13\_view\_segment\_detail.png)
+![Segment details view](../../.gitbook/assets/13\_view\_segment\_detail.png)
 
 At the top row, you will be able to see your segment name.
 

@@ -15,8 +15,6 @@
 
 * [Projects](user-guides/projects/README.md)
   * [Create a project](user-guides/projects/create-a-project.md)
-  * [Viewing a project](user-guides/projects/viewing-a-project.md)
-  * [Project Settings](user-guides/projects/project-settings.md)
 * [Feature Store](user-guides/feature-store.md)
 * [Models](user-guides/models/README.md)
   * [Connecting to Models](user-guides/models/getting-started-with-models/README.md)
@@ -41,7 +39,6 @@
     * [Configure enricher](user-guides/routers/creating-a-router/configure-enricher.md)
     * [Configure ensembler](user-guides/routers/creating-a-router/configure-ensembler.md)
     * [Configure logging](user-guides/routers/creating-a-router/logging-request-response-pairs.md)
-    * [!!Fallbacks and Error handling](user-guides/routers/creating-a-router/fallbacks-and-error-handling.md)
   * [Viewing Router Details](user-guides/routers/viewing-router-details/README.md)
     * [Configuration](user-guides/routers/viewing-router-details/viewing-router-version.md)
     * [History](user-guides/routers/viewing-router-details/history.md)

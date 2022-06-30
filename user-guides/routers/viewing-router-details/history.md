@@ -4,7 +4,7 @@ The history tab displays all versions and activity log associated with the route
 
 ### Versions
 
-![](../../../.gitbook/assets/versions\_list.png)
+![Router versions](../../../.gitbook/assets/versions\_list.png)
 
 You will see a summary of each version being displayed.
 
@@ -45,10 +45,10 @@ To view the configuration of the version in detail, proceed to you can click on 
 
 You can compare any two versions of router and check which part of the configuration has been changed. To do so, select two versions from the versions list and click on `Compare` button:
 
-![](../../../.gitbook/assets/version\_comparison.png)
+![Comparing router versions](../../../.gitbook/assets/version\_comparison.png)
 
 ### Activity Log
 
 The activity log displays information regarding the progress of the deployment and potential reasons of failed deployments.
 
-![](../../../.gitbook/assets/activity\_log.png)
+![Router activity log](../../../.gitbook/assets/activity\_log.png)

@@ -10,13 +10,13 @@ Segments can be created from the segments landing page. Created segments can be 
 
 Click on the "Create Segment" button on the landing page.&#x20;
 
-![](../../.gitbook/assets/12\_create\_segment\_landing.png)
+![Create segment button](../../.gitbook/assets/12\_create\_segment\_landing.png)
 
 ## 1. Configure Segment's General Settings
 
 1\. In the Create Segment's general settings page, you may either input the fields from scratch or choose to select a pre-configured Segment template where upon selection, would fill up the respective fields of the form. Subsequently, you may continue editing the fields if necessary.&#x20;
 
-![](../../.gitbook/assets/12\_create\_segment\_general.png)
+![Configure segments general settings](../../.gitbook/assets/12\_create\_segment\_general.png)
 
 a. **Name**: Name of Segment.
 

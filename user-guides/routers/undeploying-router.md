@@ -6,10 +6,10 @@ Navigate to the Router Details View of your router.
 
 Click on the More Actions button and select Undeploy router. Only a **deployed** router, with the status badge `Deployed` can be undeployed.
 
-![](../../.gitbook/assets/select\_undeploy\_router.png)
+![Undeploy router](../../.gitbook/assets/select\_undeploy\_router.png)
 
 Confirm if you want to undeploy your router.
 
-![](../../.gitbook/assets/undeploy\_router\_modal.png)
+![Undeploy confirmation](../../.gitbook/assets/undeploy\_router\_modal.png)
 
 Once the router has been successfully undeployed, you will see the status of your router has changed to `Not Deployed` and will no longer be monitored.

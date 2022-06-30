@@ -2,11 +2,11 @@
 
 1\. In the Treatment Details Page, click 'Edit Treatment'&#x20;
 
-![](../../.gitbook/assets/11\_modifying\_treatment\_edit\_button.png)
+![Edit treatment button](../../.gitbook/assets/11\_modifying\_treatment\_edit\_button.png)
 
 2\. In the Edit Treatment Page, you can edit the treatment's configuration. All fields except **Name** are allowed to be modified. Similar to creating a new Treatment template, you may choose to select an existing one and pre-fill some fields first rather than starting from scratch.
 
-![](../../.gitbook/assets/11\_modifying\_treatment\_edit\_page.png)
+![Edit treatment page](../../.gitbook/assets/11\_modifying\_treatment\_edit\_page.png)
 
 ## Treatment History
 

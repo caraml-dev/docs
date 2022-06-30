@@ -1,8 +1,8 @@
 # Architecture
 
-Please refer to the below diagram for a high level architecture of CaraML. You may find the component specific architecture in each of the subpages.&#x20;
+Please refer to the below diagram for a high level architecture of CaraML. You may find the component specific architecture in each of the subpages.
 
-![](../.gitbook/assets/caraml\_architecture.png)
+![CaraML Architecture](../.gitbook/assets/caraml\_architecture.png)
 
 {% content-ref url="architecture/feature-store-architecture.md" %}
 [feature-store-architecture.md](architecture/feature-store-architecture.md)

@@ -9,7 +9,7 @@ Once the treatment has been created, you will be able to view the treatment's co
 1. Click on the row that contains the treatment.
 2. You will now be able to see the Treatment Details View.&#x20;
 
-![](../../.gitbook/assets/10\_view\_treatment\_detail.png)
+![Treatment details view](../../.gitbook/assets/10\_view\_treatment\_detail.png)
 
 At the top row, you will be able to see your treatment name.
 

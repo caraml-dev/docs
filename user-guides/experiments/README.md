@@ -15,15 +15,15 @@ For access to CaraML Experiments, users can self-onboard via the CaraML UI.
 
 1\. Visit CaraML Project Landing Page, open the sidebar and click `Experiments`.&#x20;
 
-![](../../.gitbook/assets/01\_mlp\_landing.png)
+![Experiment from project landing page](../../.gitbook/assets/01\_mlp\_landing.png)
 
 2\. You should see the following Landing page, if you have yet to setup the project for Experiments.&#x20;
 
-![](../../.gitbook/assets/01\_experiments\_landing.png)
+![Initial landing page when Experiment not setup](../../.gitbook/assets/01\_experiments\_landing.png)
 
 3\. Upon clicking 'here' in the previous page, you should see a form to input the necessary settings.&#x20;
 
-![](../../.gitbook/assets/01\_settings\_create\_form.png)
+![Experiment onboarding settings](../../.gitbook/assets/01\_settings\_create\_form.png)
 
 4\. Enter a name for the Randomization Key and select the Segmenters.
 
@@ -32,5 +32,5 @@ For access to CaraML Experiments, users can self-onboard via the CaraML UI.
 
 5\. Click on Save. And voila! The onboarding is complete and you should see the configured settings. The project credentials (in particular, the `passkey`) would be required for running experiments ([CaraML Routers](../routers/) takes care of this if you are running the experiments through its routers).&#x20;
 
-![](../../.gitbook/assets/01\_settings\_details.png)
+![Experiment settings](../../.gitbook/assets/01\_settings\_details.png)
 
