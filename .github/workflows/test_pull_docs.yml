@@ -21,8 +21,15 @@ jobs:
           git remote add -f -t git-sync --no-tags model https://github.com/gojek/merlin.git
           git rm -rf module/model
           git read-tree --prefix=module/model -u model/git-sync:docs
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "sync merlin docs"
-          git push
+          if [ -z $(git status --porcelain) ];
+            then
+              git config user.name github-actions
+              git config user.email github-actions@github.com
+              git add .
+              git commit -m "sync merlin docs"
+              git push
+            else
+              echo "Nothing to commit"
+            echo git status
+          fi
+          
