@@ -1,6 +1,6 @@
-# This workflow tries to pull docs changes from other repos
+# This workflow tries to pull docs changes from given repo
 
-name: Test Pull Docs CI
+name: Pull Docs CI
 
 on:
   # Allows you to run this workflow manually from the Actions tab
