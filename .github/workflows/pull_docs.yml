@@ -14,7 +14,7 @@ on:
         description: 'value for https to git repo'      
       doc_folder:
         required: true
-        description: 'folder where docs file are stored'
+        description: 'folder to copy over'
         default: 'docs'
       branch:
         required: true
