@@ -18,7 +18,7 @@ on:
         default: 'docs'
       branch:
         required: true
-        description: 'branch name'
+        description: 'branch name to get files from'
         default: 'main'
   repository_dispatch:
 
@@ -34,17 +34,15 @@ jobs:
 
       - name: Sync changes from model repos
         run: |
-          git remote add -f -t git-sync --no-tags model https://github.com/gojek/merlin.git
-          git rm -rf module/model
-          git read-tree --prefix=module/model -u model/git-sync:docs
+          git remote add -f -t ${{ github.event.inputs.branch }} --no-tags ${{ github.event.inputs.module }} ${{ github.event.inputs.git_https }}
+          git rm -rf module/${{ github.event.inputs.module }}
+          git read-tree --prefix=module/${{ github.event.inputs.module }} -u ${{ github.event.inputs.module }}/${{ github.event.inputs.branch }}:${{ github.event.inputs.doc_folder }}
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name github-actions
             git config user.email github-actions@github.com
             git add .
-            git commit -m "sync merlin docs"
+            git commit -m "sync ${{ github.event.inputs.module }} docs"
             git push
           else
             echo "Nothing to commit"
-          fi
-          echo ${{ github.event.inputs.git_https }}
-          
+          fi          
