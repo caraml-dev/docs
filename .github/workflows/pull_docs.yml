@@ -6,6 +6,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   repository_dispatch:
+    inputs:
+      module
+      git_https
+      doc_folder
+      branch
 
 jobs:
   sync-docs:
@@ -31,5 +36,5 @@ jobs:
           else
             echo "Nothing to commit"
           fi
-          echo ${{ github.event.inputs }}
+          echo ${{ github.event.inputs.git_https }}
           
