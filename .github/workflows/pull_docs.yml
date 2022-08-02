@@ -5,12 +5,22 @@ name: Pull Docs CI
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  repository_dispatch:
     inputs:
-      module
-      git_https
-      doc_folder
-      branch
+      module:
+        required: true
+        description: 'module name'
+      git_https:
+        required: true
+        description: 'value for https to git repo'      
+      doc_folder:
+        required: true
+        description: 'folder where docs file are stored'
+        default: 'docs'
+      branch:
+        required: true
+        description: 'branch name'
+        default: 'main'
+  repository_dispatch:
 
 jobs:
   sync-docs:
