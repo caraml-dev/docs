@@ -1,0 +1,33 @@
+# This workflow triggers update in caraml doc
+
+name: Trigger Caraml doc update
+
+on:
+  push:
+    branches: 
+    - main 
+    tags:
+    - v*
+  pull_request:
+
+jobs:
+  trigger-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.CARAML_SYNC }}
+        script: |
+          await github.rest.actions.createWorkflowDispatch({
+            owner: 'caraml-dev',
+            repo: 'docs',
+            workflow_id: 'pull_docs.yml',
+            ref: 'main',
+            inputs: {
+              module: <module>,
+              git_https: <.git>,
+              doc_folder: 'docs',
+              branch: 'main',
+            },
+          })
