@@ -14,10 +14,12 @@ inputs:
     required: true
     description: 'Folder to copy over'
     default: 'docs'
-  branch:
+  ref_name:
     required: true
-    description: 'Branch name to get files from'
-    default: 'main'
+    description: 'the branch or tag to copy from'
+  ref_type:
+    required: true
+    description: 'the type of ref. Valid values are branch or tag'
   credentials:
     required: true
     description: 'Github Personal Access Token for write access to caraml-dev/docs'
@@ -39,6 +41,7 @@ runs:
             module: '${{ inputs.module }}',
             git_https: '${{ inputs.git_https }}',
             doc_folder: '${{ inputs.doc_folder }}',
-            branch: '${{ inputs.branch }}',
+            ref_name: '${{ inputs.ref_name }}',
+            ref_type: '${{ inputs.ref_type }}',
           },
         })
