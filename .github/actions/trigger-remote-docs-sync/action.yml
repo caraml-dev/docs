@@ -1,22 +1,22 @@
 # This action triggers a workflow in docs repository to pull and copy file changes from a given repository.
 
-name: Tigger Pull docs
-description: Triggers a workflow in caraml-dev/docs to pull and copy file changes from an input repository.
+name: Tigger Remote Docs Sync
+description: Triggers a workflow in caraml-dev/docs to sync file changes from a remote repository.
 
 inputs:
   module:
     required: true
-    description: 'name of caraml component'
+    description: 'Name of caraml component'
   git_https:
     required: true
-    description: 'value for https to git repo'
+    description: 'Value for https to git repo'
   doc_folder:
     required: true
-    description: 'folder to copy over'
+    description: 'Folder to copy over'
     default: 'docs'
   branch:
     required: true
-    description: 'branch name to get files from'
+    description: 'Branch name to get files from'
     default: 'main'
   credentials:
     required: true
@@ -25,7 +25,7 @@ inputs:
 runs:
   using: composite
   steps:
-  - name: Trigger Sync Workflow
+  - name: Trigger Remote Docs Sync Workflow
     uses: actions/github-script@v6
     with:
       github-token: ${{ inputs.credentials }}
@@ -33,7 +33,7 @@ runs:
         await github.rest.actions.createWorkflowDispatch({
           owner: 'caraml-dev',
           repo: 'docs',
-          workflow_id: 'pull_docs.yml',
+          workflow_id: 'remote_docs_sync.yml',
           ref: 'main',
           inputs: {
             module: '${{ inputs.module }}',
