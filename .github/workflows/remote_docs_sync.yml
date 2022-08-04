@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Caraml repo
+      - name: Checkout caraml-dev/docs repo
         uses: actions/checkout@v3
         with:
           ref: main
