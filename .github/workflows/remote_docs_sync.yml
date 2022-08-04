@@ -16,10 +16,12 @@ on:
         required: true
         description: 'folder to copy over'
         default: 'docs'
-      branch:
+      ref_name:
         required: true
-        description: 'branch name to get files from'
-        default: 'main'
+        description: 'the branch or tag to copy from'
+      ref_type:
+        required: true
+        description: 'the type of ref. Valid values are branch or tag'
   repository_dispatch:
 
 jobs:
@@ -34,9 +36,14 @@ jobs:
 
       - name: Sync changes from ${{ github.event.inputs.module }} repos
         run: |
-          git remote add -f ${{ github.event.inputs.module }} ${{ github.event.inputs.git_https }}
           git rm -rf module/${{ github.event.inputs.module }}
-          git read-tree --prefix=module/${{ github.event.inputs.module }} -u ${{ github.event.inputs.module }}/${{ github.event.inputs.branch }}:${{ github.event.inputs.doc_folder }}
+          if [ ${{ github.event.inputs.ref_type }} = 'branch' ]; then
+            git remote add -f -t ${{ github.event.inputs.ref_name }} --no-tags ${{ github.event.inputs.module }} ${{ github.event.inputs.git_https }}         
+            git read-tree --prefix=module/${{ github.event.inputs.module }} -u ${{ github.event.inputs.module }}/${{ github.event.inputs.ref_name }}:${{ github.event.inputs.doc_folder }}
+          elif [ ${{ github.event.inputs.ref_type }} = 'tag' ]; then
+            git remote add -f -t main --tags ${{ github.event.inputs.module }} ${{ github.event.inputs.git_https }}         
+            git read-tree --prefix=module/${{ github.event.inputs.module }} -u tags/${{ github.event.inputs.ref_name }}:${{ github.event.inputs.doc_folder }}
+          fi
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name github-actions
             git config user.email github-actions@github.com
@@ -45,4 +52,4 @@ jobs:
             git push
           else
             echo "Nothing to commit"
-          fi          
+          fi        
