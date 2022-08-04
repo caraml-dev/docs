@@ -42,9 +42,9 @@ jobs:
             workflow_id: 'pull_docs.yml',
             ref: 'main',
             inputs: {
-              module: ${{ inputs.module }},
-              git_https: ${{ inputs.git_https }},
-              doc_folder: ${{ inputs.doc_folder }},
-              branch: ${{ inputs.branch }},
+              module: '${{ inputs.module }}',
+              git_https: '${{ inputs.git_https }}',
+              doc_folder: '${{ inputs.doc_folder }}',
+              branch: '${{ inputs.branch }}',
             },
           })
