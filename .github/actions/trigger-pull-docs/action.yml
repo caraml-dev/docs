@@ -18,6 +18,9 @@ inputs:
     required: true
     description: 'branch name to get files from'
     default: 'main'
+  credentials:
+    required: true
+    description: 'Github Personal Access Token for write access to caraml-dev/docs'
 
 runs:
   using: composite
@@ -25,7 +28,7 @@ runs:
   - name: Trigger Sync Workflow
     uses: actions/github-script@v6
     with:
-      github-token: ${{ secrets.CARAML_SYNC }}
+      github-token: ${{ inputs.credentials }}
       script: |
         await github.rest.actions.createWorkflowDispatch({
           owner: 'caraml-dev',
