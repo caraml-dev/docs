@@ -34,7 +34,7 @@ jobs:
 
       - name: Sync changes from ${{ github.event.inputs.module }} repos
         run: |
-          git remote add -f ${{ github.event.inputs.branch }} --no-tags ${{ github.event.inputs.module }} ${{ github.event.inputs.git_https }}
+          git remote add -f ${{ github.event.inputs.module }} ${{ github.event.inputs.git_https }}
           git rm -rf module/${{ github.event.inputs.module }}
           git read-tree --prefix=module/${{ github.event.inputs.module }} -u ${{ github.event.inputs.module }}/${{ github.event.inputs.branch }}:${{ github.event.inputs.doc_folder }}
           if [ -n "$(git status --porcelain)" ]; then
