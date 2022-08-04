@@ -3,12 +3,26 @@
 name: Trigger Caraml doc update
 
 on:
-  push:
-    branches: 
-    - main 
-    tags:
-    - v*
-  pull_request:
+  workflow_call:
+    inputs:
+      module:
+        required: true
+        description: 'module name'
+        type: string
+      git_https:
+        required: true
+        description: 'value for https to git repo'
+        type: string
+      doc_folder:
+        required: true
+        description: 'folder to copy over'
+        default: 'docs'
+        type: string
+      branch:
+        required: true
+        description: 'branch name to get files from'
+        default: 'main'
+        type: string
 
 jobs:
   trigger-sync:
