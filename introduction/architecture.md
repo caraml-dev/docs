@@ -9,7 +9,7 @@ Please refer to the below diagram for a high level architecture of CaraML. You m
 {% endcontent-ref %}
 
 {% content-ref url="architecture/models-architecture.md" %}
-[models-architecture.md](architecture/models-architecture.md)
+[models-architecture.md](/module/model/dev-guide/architecture.md)
 {% endcontent-ref %}
 
 {% content-ref url="architecture/routers-architecture.md" %}
