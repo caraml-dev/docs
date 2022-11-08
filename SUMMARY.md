@@ -101,7 +101,8 @@
 ## Troubleshooting and FAQs
 
 * [CaraML System FAQ](troubleshooting-and-faqs/caraml-system-faq/README.md)
-  * [System Limitations](troubleshooting-and-faqs/caraml-system-faq/system-limitations.md)
+  * [System Limitations](/module/model/reference/limitations.md)
+  * [E2E Test](/module/model/reference/e2e-test.md)
 * [Models FAQ](troubleshooting-and-faqs/models-faq.md)
 * [Routers FAQ](troubleshooting-and-faqs/routers-faq.md)
 * [Experiments FAQ](troubleshooting-and-faqs/experiments-faq.md)
@@ -112,9 +113,9 @@
 ## Deployment Guide
 
 * [Deploying CaraML](deployment-guide/deploying-caraml.md)
-  * [Monitoring and alerting](deployment-guide/deploying-caraml/monitoring-and-alerting/README.md)
-    * [Configure a monitoring backend](deployment-guide/deploying-caraml/monitoring-and-alerting/configure-a-monitoring-backend.md)
-    * [Configure an alerting backend](deployment-guide/deploying-caraml/monitoring-and-alerting/configure-an-alerting-backend.md)
+* [Monitoring and alerting](/module/router/dev-docs/monitoring-and-alerting/README.md)
+  * [Configure a monitoring backend](/module/router/dev-docs/monitoring-and-alerting/configure-monitoring-backend.md)
+  * [Configure an alerting backend](/module/router/dev-docs/monitoring-and-alerting/configure-alerting-backend.md)
 * [Prerequisites and Dependencies](deployment-guide/prerequisites-and-dependencies.md)
 * [System Benchmark results](deployment-guide/system-benchmark-results.md)
 
