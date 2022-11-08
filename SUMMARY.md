@@ -26,6 +26,7 @@
   * [Create a Model Version](module/model/user-guide/model_version.md)
   * [Deploy a Model version endpoint](module/model/user-guide/model_endpoint.md)
   * [Serve Model Endpoint](module/model/user-guide/model_version_endpoint.md)
+  * [Model Deployment and Serving](module/model/user-guide/model_deployment_serving.md)
   * [Batch Prediction](module/model/user-guide/batch_prediction.md)
   * [Adding transformer config](module/model/user-guide/transformer.md)
   * [Standard Transformer](module/model/user-guide/standard_transformer.md)
@@ -41,7 +42,7 @@
     * [Configure enricher](module/router/how-to/create-a-router/configure-enricher.md)
     * [Configure ensembler](module/router/how-to/create-a-router/configure-ensembler.md)
     * [Configure logging](module/router/how-to/create-a-router/logging-request-response-pairs.md)
-  * [Viewing Router Details](module/router/how-to/viewing-routers/README.md)
+  * [Viewing Routers](module/router/how-to/viewing-routers/README.md)
     * [Configuration](module/router/how-to/viewing-routers/configuration.md)
     * [History](module/router/how-to/viewing-routers/history.md)
     * [Logs](module/router/how-to/viewing-routers/logs.md)
@@ -101,9 +102,11 @@
 ## Troubleshooting and FAQs
 
 * [CaraML System FAQ](troubleshooting-and-faqs/caraml-system-faq/README.md)
+* [Models FAQ](troubleshooting-and-faqs/models-faq.md)
   * [System Limitations](/module/model/reference/limitations.md)
   * [E2E Test](/module/model/reference/e2e-test.md)
-* [Models FAQ](troubleshooting-and-faqs/models-faq.md)
+  * [Deployment Mode](/module/model/user-guide/deployment_mode.md)
+  * [Autoscaling Policy](/module/model/user-guide/autoscaling_policy.md)
 * [Routers FAQ](troubleshooting-and-faqs/routers-faq.md)
 * [Experiments FAQ](troubleshooting-and-faqs/experiments-faq.md)
 * [Feature Store FAQ](troubleshooting-and-faqs/feature-store-faq.md)
@@ -113,6 +116,7 @@
 ## Deployment Guide
 
 * [Deploying CaraML](deployment-guide/deploying-caraml.md)
+  * [Local Development](/module/model/dev-guide/deploying-merlin/local_development.md)
 * [Monitoring and alerting](/module/router/dev-docs/monitoring-and-alerting/README.md)
   * [Configure a monitoring backend](/module/router/dev-docs/monitoring-and-alerting/configure-monitoring-backend.md)
   * [Configure an alerting backend](/module/router/dev-docs/monitoring-and-alerting/configure-alerting-backend.md)
