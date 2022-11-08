@@ -15,9 +15,9 @@
   * [Experiment Concepts](module/experiment/concepts.md)
 ## User guides
 
-* [Projects](module/projects/README.md)
+* [Projects](/projects/README.md)
   * [Create a project](module/router/how-to/create-project.md)
-* [Feature Store](module/feature-store.md)
+* [Feature Store](/feature-store.md)
 * [Models](module/model/README.md)
   * [Connecting to Models](module/model/connecting-to-merlin/README.md)
     * [Python SDK](module/model/connecting-to-merlin/python-sdk.md)
@@ -75,7 +75,7 @@
   * [Creating Custom Segmenters](module/experiment/how-to/15_creating_custom_segmenters.md)
   * [Viewing Custom Segmenters](module/experiment/how-to/16_viewing_custom_segmenters.md)
   * [Modifying Custom Segmenters](module/experiment/how-to/17_modifiying_custom_segmenters.md)
-* [Pipelines](module/pipelines.md)
+* [Pipelines](/pipelines.md)
 
 ## Tutorial and Examples
 
