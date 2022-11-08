@@ -64,8 +64,8 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [routers](module/router/)
 {% endcontent-ref %}
 
-{% content-ref url="module/experiment/" %}
-[experiments](module/experiment/)
+{% content-ref url="module/experiment/how-to/01_getting_started.md" %}
+[experiments](module/experiment/how-to/01_getting_started.md)
 {% endcontent-ref %}
 
 {% content-ref url="pipelines.md" %}
