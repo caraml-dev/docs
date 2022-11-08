@@ -48,16 +48,16 @@ CaraML Pipelines are a set of solutions to build data application systems like E
 
 Follow our handy guides to get started on the basics as quickly as possible:
 
-{% content-ref url="module/projects/" %}
-[projects](module/projects/)
+{% content-ref url="projects/" %}
+[projects](projects/)
 {% endcontent-ref %}
 
 {% content-ref url="module/model/" %}
 [models](module/model/)
 {% endcontent-ref %}
 
-{% content-ref url="module/feature-store.md" %}
-[feature-store.md](module/feature-store.md)
+{% content-ref url="feature-store.md" %}
+[feature-store.md](feature-store.md)
 {% endcontent-ref %}
 
 {% content-ref url="module/router/" %}
@@ -68,8 +68,8 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [experiments](module/experiment/)
 {% endcontent-ref %}
 
-{% content-ref url="module/pipelines.md" %}
-[pipelines.md](module/pipelines.md)
+{% content-ref url="pipelines.md" %}
+[pipelines.md](pipelines.md)
 {% endcontent-ref %}
 
 ## Deploying CaraML in your infrastructure?
