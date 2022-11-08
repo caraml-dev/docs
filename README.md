@@ -2,6 +2,7 @@
 
 CaraML is a **Machine Learning Operations (MLOps) platform** that helps data scientists focus on data science by abstracting the engineering complexities of building and running large scale Machine Learning applications.
 
+To access this documentation in GitBook, please follow this URL [CaraML Docs](https://caraml.gitbook.io/caraml-doc/)
 ## **Main components for CaraML:**
 
 ### **Models**
