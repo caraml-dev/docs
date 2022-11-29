@@ -2,6 +2,7 @@
 
 CaraML is a **Machine Learning Operations (MLOps) platform** that helps data scientists focus on data science by abstracting the engineering complexities of building and running large scale Machine Learning applications.
 
+To access this documentation in GitBook, please follow this URL [CaraML Docs](https://caraml.gitbook.io/caraml-doc/)
 ## **Main components for CaraML:**
 
 ### **Models**
@@ -47,28 +48,28 @@ CaraML Pipelines are a set of solutions to build data application systems like E
 
 Follow our handy guides to get started on the basics as quickly as possible:
 
-{% content-ref url="module/projects/" %}
-[projects](module/projects/)
+{% content-ref url="projects/" %}
+[projects](projects/)
 {% endcontent-ref %}
 
 {% content-ref url="module/model/" %}
 [models](module/model/)
 {% endcontent-ref %}
 
-{% content-ref url="module/feature-store.md" %}
-[feature-store.md](module/feature-store.md)
+{% content-ref url="feature-store.md" %}
+[feature-store.md](feature-store.md)
 {% endcontent-ref %}
 
 {% content-ref url="module/router/" %}
 [routers](module/router/)
 {% endcontent-ref %}
 
-{% content-ref url="module/experiment/" %}
-[experiments](module/experiment/)
+{% content-ref url="module/experiment/how-to/01_getting_started.md" %}
+[experiments](module/experiment/how-to/01_getting_started.md)
 {% endcontent-ref %}
 
-{% content-ref url="module/pipelines.md" %}
-[pipelines.md](module/pipelines.md)
+{% content-ref url="pipelines.md" %}
+[pipelines.md](pipelines.md)
 {% endcontent-ref %}
 
 ## Deploying CaraML in your infrastructure?

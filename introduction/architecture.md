@@ -8,8 +8,8 @@ Please refer to the below diagram for a high level architecture of CaraML. You m
 [feature-store-architecture.md](architecture/feature-store-architecture.md)
 {% endcontent-ref %}
 
-{% content-ref url="architecture/models-architecture.md" %}
-[models-architecture.md](/module/model/dev-guide/architecture.md)
+{% content-ref url="/module/model/dev-guide/architecture.md" %}
+[architecture.md](/module/model/dev-guide/architecture.md)
 {% endcontent-ref %}
 
 {% content-ref url="architecture/routers-architecture.md" %}
