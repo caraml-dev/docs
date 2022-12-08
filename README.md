@@ -3,6 +3,7 @@
 CaraML is a **Machine Learning Operations (MLOps) platform** that helps data scientists focus on data science by abstracting the engineering complexities of building and running large scale Machine Learning applications.
 
 To access this documentation in GitBook, please follow this URL [CaraML Docs](https://caraml.gitbook.io/caraml-doc/)
+
 ## **Main components for CaraML:**
 
 ### **Models**
@@ -53,7 +54,7 @@ Follow our handy guides to get started on the basics as quickly as possible:
 {% endcontent-ref %}
 
 {% content-ref url="module/model/" %}
-[models](module/model/)
+[model](module/model/)
 {% endcontent-ref %}
 
 {% content-ref url="feature-store.md" %}
@@ -61,11 +62,11 @@ Follow our handy guides to get started on the basics as quickly as possible:
 {% endcontent-ref %}
 
 {% content-ref url="module/router/" %}
-[routers](module/router/)
+[router](module/router/)
 {% endcontent-ref %}
 
 {% content-ref url="module/experiment/how-to/01_getting_started.md" %}
-[experiments](module/experiment/how-to/01_getting_started.md)
+[01\_getting\_started.md](module/experiment/how-to/01\_getting\_started.md)
 {% endcontent-ref %}
 
 {% content-ref url="pipelines.md" %}
@@ -74,7 +75,7 @@ Follow our handy guides to get started on the basics as quickly as possible:
 
 ## Deploying CaraML in your infrastructure?
 
-Please refer to our deployment guide below to deploy CaraML into your own infrastructure
+Please refer to our deployment guide below to deploy CaraML into your own infrastructure.
 
 {% content-ref url="deployment-guide/deploying-caraml.md" %}
 [deploying-caraml.md](deployment-guide/deploying-caraml.md)
