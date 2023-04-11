@@ -17,7 +17,7 @@
 ## User guides
 
 * [Projects](projects/README.md)
-  * [Create a project](module/router/how-to/create-project.md)
+  * [Create a project](projects/create-project.md)
 * [Feature Store](feature-store.md)
 * [Models](module/model/README.md)
   * [Connecting to Models](module/model/connecting-to-merlin/README.md)
