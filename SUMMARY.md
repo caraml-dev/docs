@@ -18,6 +18,7 @@
 
 * [Projects](projects/README.md)
   * [Create a project](projects/create-project.md)
+  * [Managing secrets](projects/secrets.md)
 * [Feature Store](feature-store.md)
 * [Models](module/model/README.md)
   * [Connecting to Models](module/model/connecting-to-merlin/README.md)
