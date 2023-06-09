@@ -1,6 +1,6 @@
 # CaraML Secret
 
-CaraML provides capability for storing user's secret in the platform. The secret can be used by the user within CaraML workfload such as batch prediction, router deployment, and pipeline.
+CaraML provides capability for storing user's secret in the platform. The secret can be used by the user within CaraML workload such as batch prediction, router deployment, and pipeline.
 The secret is stored within a secret storage which can be configured in CaraML deployment.
 
 ## Creating Secret
