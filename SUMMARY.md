@@ -46,7 +46,7 @@
     * [Configure experiment engine](module/router/how-to/create-a-router/configure-experiment-engine.md)
     * [Configure enricher](module/router/how-to/create-a-router/configure-enricher.md)
     * [Configure ensembler](module/router/how-to/create-a-router/configure-ensembler.md)
-    * [Configure logging](user-guides/router/create-a-router/configure-logging.md)
+    * [Configure logging](module/router/how-to/create-a-router/configure-logging-request-response.md)
   * [Viewing Routers](module/router/how-to/viewing-routers/README.md)
     * [Configuration](module/router/how-to/viewing-routers/configuration.md)
     * [History](module/router/how-to/viewing-routers/history.md)
