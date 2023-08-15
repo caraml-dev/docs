@@ -30,7 +30,6 @@
   * [Serve Model Endpoint](module/model/user-guide/model\_version\_endpoint.md)
   * [Model Deployment and Serving](module/model/user-guide/model\_deployment\_serving.md)
   * [Batch Prediction](module/model/user-guide/batch\_prediction.md)
-  * [Model Deletion](module/model/user-guide/model_deletion.md)
   * [Model Version Deletion](module/model/user-guide/model_version_deletion.md)
   * [Adding transformer config](module/model/user-guide/transformer.md)
   * [Standard Transformer](module/model/user-guide/standard\_transformer.md)
