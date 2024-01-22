@@ -53,8 +53,8 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [projects](projects/)
 {% endcontent-ref %}
 
-{% content-ref url="module/model/" %}
-[model](module/model/)
+{% content-ref url="module/model/user/generated/01_getting_started.md" %}
+[model](module/model/user/generated/01_getting_started.md)
 {% endcontent-ref %}
 
 {% content-ref url="feature-store.md" %}

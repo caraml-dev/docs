@@ -22,7 +22,7 @@
 * [Feature Store](feature-store.md)
 * [Models](module/model/user/generated/01_getting_started.md)
   * [Create a Model](module/model/user/generated/02_creating_a_model.md)
-    * [Create a Model](module/model/user/generated/model_types/01_custom_model.md)
+    * [Custom Model](module/model/user/generated/model_types/01_custom_model.md)
   * [Deploy a Model](module/model/user/generated//03_deploying_a_model.md)
     * [Deploying a Model Version](module/model/user/generated/model_deployment/01_deploying_a_model_version.md)
     * [Severing a Model Version](module/model/user/generated/model_deployment/02_serving_a_model_version.md)
