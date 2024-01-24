@@ -6,8 +6,8 @@ Project represents a namespace for a collection of CaraML resources, that belong
 
 ## Model
 This section describes the main concepts related to CaraML Models component.
-{% content-ref url="/module/model/user-guide/basics.md" %}
-[basics.md](/module/model/user-guide/basics.md)
+{% content-ref url="/module/model/user/generated/00_introduction.md" %}
+[00_introduction.md](/module/model/user/generated/00_introduction.md)
 {% endcontent-ref %}
 
 ## Feature Store
